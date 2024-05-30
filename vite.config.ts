@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     base: '/github-release-notes/',
     plugins: [react()],
+    build: {
+        outDir: 'docs'
+    }
 })
